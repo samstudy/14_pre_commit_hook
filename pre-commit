@@ -1,0 +1,7 @@
+#!/bin/sh
+python3.5 tests.py 2>/dev/null 
+error=$?
+if [ error!=0 ]; then
+    echo "Something wrong,please check a code"
+    exit 1
+fi

@@ -1,5 +1,3 @@
-
-
 ![pre-commit](https://cloud.githubusercontent.com/assets/22424468/21577946/dfc97582-cf97-11e6-869d-4225b03d4265.jpg)
 
 ___
@@ -7,12 +5,16 @@ ___
 ___
 
 
-> **The script will estimate your password's strength**
+> **The script will not allow commit if test case failed**
 
 ### Usage
 
-    Run the script like python password_strength.py
-    After you should input your password to find out it's strenght(Notify:1--weak....,10-the strongest)
+    Need to input pre-commit file into .git/hooks directory by command: mv pre-commit .git/hooks
+    Do script executable: chmod + .git/hooks/pre-commit
+
+### Scenario    
+    
+    If test case on file tests.py doesn't pass  you  will got error during commit
 
 
 ### Requirement
